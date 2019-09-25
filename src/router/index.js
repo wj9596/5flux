@@ -41,7 +41,7 @@ export const layoutRoutes = [
         component: Arrival,
         exact: true,
         meta: {
-            requireAuth: true,
+            requireAuth: false,
             flag:true
         }
     },
