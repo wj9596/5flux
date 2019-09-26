@@ -3,7 +3,7 @@ const path = require("path")
 module.exports = override(
     //按需加载
     fixBabelImports('import', {
-        libraryName: 'antd-mobile',
+        libraryName: 'antd-modile',
         libraryDirectory: 'es',
         style: 'css',
     }),
