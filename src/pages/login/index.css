@@ -1,0 +1,9 @@
+.login-header {
+    width:100%;
+    height: 0.3667rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.1333rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
