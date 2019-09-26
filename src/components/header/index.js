@@ -9,13 +9,13 @@ export default class Header extends Component {
     render() {
         return (
             <div id="header">
-                <div className="head-search">
-                    <img src={search} />
-                    <span>5FLUX.COM</span>
-                </div>
-                <div className="head-cart">
+                <NavLink to="/search" className="head-search">
+                    <img src={search} alt="1"/>
+                    <span>5LUX.COM</span>
+                </NavLink>
+                <NavLink to="/cart" className="head-cart">
                     <img src={cart} alt=""/>
-                </div>
+                </NavLink>
             </div>
         )
     }

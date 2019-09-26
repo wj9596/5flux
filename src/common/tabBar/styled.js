@@ -11,6 +11,7 @@ background:#000;
 display:flex;
 justify-content: space-around;
 align-items: center;
+padding:5px 0;
 ul,li{
     width:100%;
     height:100%;

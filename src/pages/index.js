@@ -27,10 +27,22 @@ const Login = Loadable({
     loading:Loading
 })
 
+const Cart = Loadable({
+    loader:()=>import("./cart"),
+    loading:Loading
+})
+
+const Search = Loadable({
+    loader:()=>import("./search"),
+    loading:Loading
+})
+
 export {
     Home,
     Shopping,
     Arrival,
     Mine,
-    Login
+    Login,
+    Cart,
+    Search
 }

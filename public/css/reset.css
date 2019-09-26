@@ -12,7 +12,7 @@ address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:norm
 
 ul, ol ,li{ list-style:none; }
 
-body { color:#333; font:12px PingFang SC,STHeiTisc-Light,Helvetice-Light,arial,sans-serif; background:#fff;}
+body {  color: #7e8c8d;; font:12px PingFang SC,STHeiTisc-Light,Helvetice-Light,arial,sans-serif; background:#fff;}
 
 a { color:#666; text-decoration:none; }
 /*清除浮动*/

@@ -1,0 +1,9 @@
+#carousel{
+    width: 100%;
+}
+#carousel ul,#carousel li{
+    width: 100%;
+}
+#carousel ul li img{
+    width: 100%;
+}

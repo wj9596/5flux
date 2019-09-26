@@ -3,7 +3,9 @@ import {
     Shopping,
     Arrival,
     Mine,
-    Login
+    Login,
+    Cart,
+    Search
 } from "@pages"
 
 
@@ -70,6 +72,26 @@ export const noLayoutRoutes = [
         exact: true,
         meta: {
             requireAuth: false
+        }
+    },
+    {
+        key: "/search",
+        path: "/search",
+        name: "搜索",
+        component: Search,
+        exact: true,
+        meta: {
+            requireAuth: false
+        }
+    },
+    {
+        key: "/cart",
+        path: "/cart",
+        name: "购物车",
+        component: Cart,
+        exact: true,
+        meta: {
+            requireAuth: true
         }
     }
 ]
