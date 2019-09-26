@@ -1,16 +1,32 @@
 import React, { Component } from 'react'
+import { Carousel } from 'antd-mobile';
 import "./style.css"
 
-export default class Carousel extends Component {
+export default class Carousels extends Component {
     render() {
+        let { carouselImg } = this.props
         return (
-            <div id="carousel">
-                <ul className="carousel-container">
-                    <li>
-                        <img src="http://img550.5lux.com.cn/2019/08/20/hi/156629900035_750x825.jpg" alt=""/>
-                    </li>
-                </ul>
-            </div>
+            
+                <Carousel
+                    autoplay={true}
+                    infinite
+                >
+                    {
+                        carouselImg.map((item, index) => (
+                                <img
+                                    key={index}
+                                    src={item.slide_thumb} alt={item.slide_title}
+                                    style={{ width: '100%', verticalAlign: 'top' }}
+                                    onLoad={() => {
+                                        // fire window resize event to change height
+                                        window.dispatchEvent(new Event('resize'),{ passive: false });
+                                        this.setState({ imgHeight: 'auto' });
+                                    }}
+                                />
+                        ))
+                    }
+                </Carousel>
+           
         )
     }
 }

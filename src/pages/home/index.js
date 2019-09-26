@@ -1,75 +1,72 @@
-import React, { Component,Fragment} from 'react'
+import React, { Component, Fragment } from 'react'
 import Header from "@components/header";
-import Carousel from "@components/carousel"
+import Carousels from "@components/carousel"
 import "./style.css"
-import {home_api} from "@api/home";
+import { carsouel_api, funNav_api, adv1_api } from "@api/home";
 
 export default class Home extends Component {
+    constructor() {
+        super();
+        this.state = {
+            carImg: [],
+            funNav: [],
+            adv1: []
+        }
+    }
     render() {
+        let { carImg, funNav, adv1 } = this.state
         return (
             <Fragment>
-                <Header/>
+                <Header />
                 <div className="container">
-                    <Carousel/>
+                    <Carousels carouselImg={carImg} />
                     <div className="fun_nav">
                         <ul className="fun_list">
-                            <li>
-                                <img src="http://img540.5lux.com.cn/2016/08/31/ij/147263296079_50x50.png" alt=""/>
-                                <span>上新</span>
-                            </li>
-                            <li>
-                                <img src="http://img540.5lux.com.cn/2016/08/31/ij/147263296079_50x50.png" alt=""/>
-                                <span>上新</span>
-                            </li>
-                            <li>
-                                <img src="http://img540.5lux.com.cn/2016/08/31/ij/147263296079_50x50.png" alt=""/>
-                                <span>上新</span>
-                            </li>
-                            <li>
-                                <img src="http://img540.5lux.com.cn/2016/08/31/ij/147263296079_50x50.png" alt=""/>
-                                <span>上新</span>
-                            </li>
-                            <li>
-                                <img src="http://img540.5lux.com.cn/2016/08/31/ij/147263296079_50x50.png" alt=""/>
-                                <span>上新</span>
-                            </li>
+                            {
+                                funNav.map((item, index) => (
+                                    <li key={index}>
+                                        <img src={item.ad_code} alt={item.ad_name} />
+                                        <span>{item.ad_name}</span>
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="adv1">
                         <ul className="adv1_list">
-                            <li>
-                                <a href="#">
-                                    <img src="http://img550.5lux.com.cn/2019/07/04/hi/156221175711_368x260.jpg" alt=""/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="http://img550.5lux.com.cn/2019/07/04/hi/156221175711_368x260.jpg" alt=""/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="http://img550.5lux.com.cn/2019/07/04/hi/156221175711_368x260.jpg" alt=""/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="http://img550.5lux.com.cn/2019/07/04/hi/156221175711_368x260.jpg" alt=""/>
-                                </a>
-                            </li>
+                            {
+                                adv1.map((item, index) => (
+                                    <li key={index}>
+                                        <a href="#">
+                                            <img src={item.ad_code} alt={item.ad_name} />
+                                        </a>
+                                    </li>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="content">
                         <div className="new_register">
-                            
+
                         </div>
                     </div>
                 </div>
             </Fragment>
         )
     }
-    async componentDidMount(){
-        let data = await home_api();
-        console.log(data);
+    async componentDidMount() {
+        let carData = await carsouel_api();
+        let carImg = carData.data;
+        let funData = await funNav_api();
+        let funNav = funData.data.list;
+        let adv1Data = await adv1_api();
+        let adv1 = adv1Data.data
+        console.log(adv1Data)
+        this.setState({
+            carImg: carImg,
+            funNav: funNav,
+            adv1: adv1
+        })
+
     }
 }
