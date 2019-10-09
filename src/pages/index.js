@@ -37,6 +37,16 @@ const Search = Loadable({
     loading:Loading
 })
 
+const Special = Loadable({
+    loader:()=>import("./special"),
+    loading:Loading
+})
+
+const Detail = Loadable({
+    loader:()=>import("./detail"),
+    loading:Loading
+})
+
 export {
     Home,
     Shopping,
@@ -44,5 +54,7 @@ export {
     Mine,
     Login,
     Cart,
-    Search
+    Search,
+    Special,
+    Detail
 }

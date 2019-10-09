@@ -34,8 +34,10 @@ const post = (url, data) => {
         },
         body: qs.stringify(data)
     })
-
-
+    .then(res=>res.json())
+    .then(data=>{
+        console.log(111)
+    })
     return result;
 }
 

@@ -1,0 +1,13 @@
+.isnulltop{
+    width: 100%;
+}
+.isnulltop .is_img_wps {
+    width: 37.5%;
+    margin: 0 auto;
+    margin-top: 4%;
+    padding-bottom: .166667rem;
+}
+.isnulltop .is_img_wps img{
+    width: 100%;
+    height: 100%;
+}

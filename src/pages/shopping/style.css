@@ -1,0 +1,67 @@
+/* 头部导航 */
+.shopTab{
+    width: 100%;
+    height: .333333rem;
+    overflow: hidden; 
+    float: left;
+    position: fixed;
+    top:.36rem;            
+    left:0;
+    z-index: 20;
+}
+.tabWarp{
+    display: flex;
+    height: 100%;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 0.25rem;
+    background: #ffffff;
+    margin-bottom: 1px;
+    float: left;
+}
+.tabWarp .tab_list {
+    margin-right: 0.25rem;
+    width: 0.25rem;
+    -ms-flex: 0 0 0.25rem;
+    flex: 0 0 0.25rem;
+}
+.tabWarp .tab_list a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 0.325rem;
+    font-size: 0.125rem;
+    color: #999;
+}
+.active{
+    border-bottom:3px solid #000;
+}
+.shop-middle{
+    width: 100%;
+    margin-top: .34rem;
+}
+/* 轮播图 */
+.shop_banner{
+    width: 100%;
+}
+/* 轮播图下面导航 */
+.fun_nav{
+    width: 100%;
+    padding: .125rem;
+}
+.fun_list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fun_nav  .fun_list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.fun_nav  .fun_list li img{
+    width: .208333rem;
+    height: .208333rem;
+    margin-bottom: .041667rem;
+}

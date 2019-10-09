@@ -1,0 +1,12 @@
+/* 回到顶部 */
+.back-top{
+    width: 0.3333rem;
+    height: .333333rem;
+    position: fixed;
+    bottom: 0.5rem;
+    right:.166667rem;
+}
+.back-top img{
+    width: 100%;
+    height:100%;
+}

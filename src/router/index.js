@@ -5,7 +5,9 @@ import {
     Mine,
     Login,
     Cart,
-    Search
+    Search,
+    Special,
+    Detail
 } from "@pages"
 
 
@@ -92,6 +94,26 @@ export const noLayoutRoutes = [
         exact: true,
         meta: {
             requireAuth: true
+        }
+    },
+    {
+        key: "/special",
+        path: "/special/:id",
+        name: "特别页",
+        component: Special,
+        exact: true,
+        meta: {
+            requireAuth: false
+        }
+    },
+    {
+        key: "/detail",
+        path: "/detail/:product_id",
+        name: "详情页",
+        component: Detail,
+        exact: true,
+        meta: {
+            requireAuth: false
         }
     }
 ]

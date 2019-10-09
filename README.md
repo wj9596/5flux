@@ -23,7 +23,45 @@
 - react-loadable
 - qs
 - styled-components
+- http-proxy-middleware
+- @babel/plugin-proposal-decorators 装饰器
 
 ```javascript
     yarn add react-router-dom redux react-redux redux-actions redux-thunk whatwg-fetch react-loadable qs styled-components
 ```
+
+
+
+# 装饰器出现的问题
+- @babel/plugin-transform-react-jsx-source  安装
+- react-scripts  安装
+
+
+
+
+# 装饰器使用流程(基于create-react-app)
+- git add .    git commit -m "xxx"
+- npm run eject
+- 安装 yarn add  @babel/plugin-proposal-decorators  --dev
+- 找到package.json文件中的babel属性
+    ```javascript
+        "plugins": [
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+            "legacy": true
+            }
+        ]
+        ]
+    ```
+
+
+```javascript
+    yarn add react-router-dom redux react-redux redux-actions redux-thunk whatwg-fetch react-loadable qs styled-components
+```
+
+
+```javascript
+    yarn add react-router-dom redux react-redux redux-actions redux-thunk whatwg-fetch react-loadable qs styled-components
+```
+

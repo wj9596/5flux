@@ -1,0 +1,59 @@
+.shopother{
+    width: 100%;
+    padding-top:0.34rem 
+}
+.goods_list{
+    width: 100%;
+}
+.goods_list_warpper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.goods_list .goods_list_warpper .goodsli{
+    background: #fff;
+    width: 49.4%;
+    margin: 0 1px 1px;
+}
+.goods_list_warpper .goodsli .imgwarpper {
+    display: flex;
+}
+.goods_list_warpper .goodsli .imgwarpper .img {
+    width: 100%;
+}
+.goods_list_warpper .goodsli .list_con{
+    margin: 0.1667rem 0.125rem 0.25rem;
+    text-align: center;
+    font-weight: 400;
+}
+.goods_list_warpper .goodsli .list_con .en_name{
+    font-size: 0.1083rem;
+    height: 0.1083rem;
+    color: #333;
+    padding-bottom: 0.05rem;
+    overflow: hidden;
+    text-overflow: ellipisi;
+    white-space: nowrap;
+}
+.goods_list_warpper .goodsli .list_con .name {
+    font-size: 0.1rem;
+    height: 0.2rem;
+    color: #999;
+    margin-bottom: 0.0667rem;
+    overflow: hidden;
+    text-overflow: ellipisi;
+    white-space: nowrap;
+}
+.price_warpper {
+    height: 0.1rem;
+}
+.price {
+    font-size: 0.1rem;
+    color: #9b885f;
+}
+.price_warpper .old_price {
+    font-size: 0.1rem;
+    color: #999;
+    text-decoration: line-through;
+}

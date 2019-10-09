@@ -16,7 +16,6 @@ export default class TabBar extends Component {
                                     <span>{item.name}</span>
                                 </NavLink>
                             </li>
-                            
                         ))
                     }
                 </ul>

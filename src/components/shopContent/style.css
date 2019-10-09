@@ -1,0 +1,156 @@
+.shopContent{
+    width:100%;
+    padding-bottom:50px;
+}
+.com_warp {
+    margin-bottom: 0.0833rem;
+    background: #fff;
+}
+.com_title {
+    height: 0.4167rem;
+    color: #333;
+}
+.com_title .name {
+    font-size: 0.1333rem;
+    font-weight: 700;
+    padding: 0.0667rem 0 0.0417rem;
+    text-align: center;
+}
+.com_title .en_name {
+    font-size: 0.1083rem;
+    line-height:0.1083rem;
+    padding-bottom: 0.0667rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+}
+.line{
+    width: 1.25rem;
+    height: 1px;
+    background: #000;
+    display:inline-block;
+}
+.text{
+    position: absolute;
+    top:-60%;
+    left: 37%;
+    background: #fff;
+    padding: 0 0.0833rem;
+}
+.adv_fir {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0.0417rem;
+}
+.com_text_menu {
+    width: 100%;
+    text-align: center;
+    font-size: .183333rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(transparent),to(rgba(0,0,0,.7)));
+}
+.adv_sec {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.adv_sec .adv_list {
+    width: calc(50% - 3px);
+    overflow: hidden;
+    position: relative;
+}
+.adv_sec .adv_list a {
+    display: block;
+    width: 100%;
+}
+.com_text_list {
+    width: 100%;
+    text-align: center;
+    font-size: 0.15rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background: -webkit-gradient(linear,0 0,0 bottom,from(transparent),to(rgba(0,0,0,.7)));
+}
+/* 主页内容 */
+.artical-warpper {
+    text-align: left;
+    padding: .15rem .166667rem .166667rem;
+    background: #fff;
+}
+.artical-warpper .name {
+    font-family: \\9ED1\4F53;
+    font-weight: 700;
+    display: block;
+    font-size: .1rem;
+    color: #333;
+    line-height: .15rem;
+    padding-bottom: .15rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.artical-warpper .detail {
+    font-family: \\9ED1\4F53;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: .06rem;
+    color: #999;
+    height: .283333rem;
+    line-height: .15rem;
+    
+}
+
+.scroll{
+    width: 100%;
+    overflow: hidden;
+    padding: .166667rem .083333rem;
+    background: #fff;
+}
+.scrollul{
+    display: flex;
+    width: max-content;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+}
+.item {
+    -ms-flex: 0 0 1.0833rem;
+    flex: 0 0 1.0833rem;
+    width: 1.0833rem;
+    padding: 0 0.0833rem;
+}
+.img{
+    height: 1.0833rem;
+}
+.name {
+    font-family: Aria;
+    font-size: 0.1083rem;
+    padding: 0.0833rem 0 0.0417rem;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+.price {
+    font-family: Aria;
+    font-size: 0.1rem;
+    color: #999;
+    text-align: center;
+}

@@ -4,6 +4,8 @@ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, l
 
 #root{
     width: 100%;
+    background: #f2f2f2;
+    height: 100%;
 }
 fieldset, c{ border:none; }
 
